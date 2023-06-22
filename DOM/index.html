@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo JavaScript - DOM</title>
+    <style>
+        body{
+            padding-bottom: 450px;
+        }
+        .retangulo{
+            width: 400px;
+            height: 250px;
+            border: 2px solid black;
+            background-color: bisque;
+        }
+        .btn{
+            margin-top: 16px;
+            padding: 8px;
+            background-color: aliceblue;
+        }
+        .btn:active{
+            background-color: aquamarine;
+        }
+        .muda-cor{
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="titulo1" class="meu-titulo">Este é o texto Original</h1>
+    <hr>
+
+    <p class="paragrafo">Primeiro Parágrafo</p>
+    <p class="paragrafo">Segundo Parágrafo</p>
+    <p class="paragrafo">Terceiro Parágrafo</p>
+    <hr>
+
+    <div class="retangulo"></div>
+    <button class="btn">Muda Classe</button>
+    <hr>
+
+    <ul class="lista"></ul>
+    <input type="text" id="input-texto">
+    <button class="btn" id="btn-adiciona">Adicionar Linha</button>
+    <hr>
+
+    <ul class="lista-apaga">
+        <li class="linha-apagar">Linha 1</li>
+        <li class="linha-apagar">Linha 2</li>
+        <li class="linha-apagar">Linha 3</li>
+        <li class="linha-apagar">Linha 4</li>
+        <li class="linha-apagar">Linha 5</li>
+        <li class="linha-apagar">Linha 6</li>
+        <li class="linha-apagar">Linha 7</li>
+        <li class="linha-apagar">Linha 8</li>
+        <li class="linha-apagar">Linha 9</li>
+    </ul>
+    <hr>
+
+
+    <ul class="filtra-lista">
+        <li class="filtra-linha">JavaScript</li>
+        <li class="filtra-linha">Java</li>
+        <li class="filtra-linha">HTML</li>
+        <li class="filtra-linha">CSS</li>
+        <li class="filtra-linha">UX-UI</li>
+        <li class="filtra-linha">HTML</li>
+        <li class="filtra-linha">CSS</li>
+        <li class="filtra-linha">JavaScript</li>
+        <li class="filtra-linha">UX-UI</li>
+        <li class="filtra-linha">Java</li>
+        <li class="filtra-linha">HTML</li>
+        <li class="filtra-linha">JavaScript</li>
+        <li class="filtra-linha">Java</li>
+        <li class="filtra-linha">CSS</li>
+    </ul>
+    <input type="text" id="input-filtra">
+    <hr>
+
+    <script src="mudaTexto.js"></script>
+    <script src="mudaCSS.js"></script>
+    <script src="mudaClasse.js"></script>
+    <script src="adicionaLinha.js"></script>
+    <script src="apagaLinha.js"></script>
+    <script src="filtrarLista.js"></script>
+</body>
+</html>
